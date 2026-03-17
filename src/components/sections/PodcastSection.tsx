@@ -1,11 +1,12 @@
 import { Headphones, ExternalLink } from "lucide-react";
 
-const EPISODIOS_YT = [
+const SPOTIFY_SHOW_ID = "4yEYbKGrKXm7vmHMYhWVNG";
+
+const EPISODIOS = [
   {
     id: "16",
     titulo: "Epi 16: Yo Soy — un viaje de regreso al Ser",
     descripcion: "Un viaje hacia lo más importante que podemos hacer: volver a nuestro Yo Soy. Ese espacio donde nada falta.",
-    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
     duracion: "27 min",
     numero: "16",
   },
@@ -13,7 +14,6 @@ const EPISODIOS_YT = [
     id: "15",
     titulo: "Epi 15: Volver a Mí — la reconexión",
     descripcion: "El malestar también puede ser una señal. Una brújula que nos recuerda que algo dentro nuestro está pidiendo atención.",
-    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
     duracion: "21 min",
     numero: "15",
   },
@@ -21,7 +21,6 @@ const EPISODIOS_YT = [
     id: "m2",
     titulo: "Meditación: Regreso a mi centro",
     descripcion: "Una pequeña meditación para volver a vos. A veces lo que más necesitamos no está afuera, sino dentro de nosotros.",
-    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
     duracion: "3 min",
     numero: "✦",
   },
@@ -29,7 +28,6 @@ const EPISODIOS_YT = [
     id: "14",
     titulo: "Epi 14: Volver a Mí — cuando nos perdemos",
     descripcion: "Los procesos terapéuticos nos invitan a encontrarnos. Este episodio le da nombre al programa terapéutico de Iara.",
-    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
     duracion: "15 min",
     numero: "14",
   },
@@ -37,7 +35,6 @@ const EPISODIOS_YT = [
     id: "13",
     titulo: "Epi 13: Autoestima",
     descripcion: "Usá la autoestima como interrogante para observarte y enfocarte en dos de sus componentes más transformadores.",
-    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
     duracion: "19 min",
     numero: "13",
   },
@@ -45,7 +42,6 @@ const EPISODIOS_YT = [
     id: "m1",
     titulo: "Meditación de autocompasión",
     descripcion: "Una práctica de mindfulness para sentir tus emociones sin juicio, con apertura, amabilidad y compasión.",
-    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
     duracion: "8 min",
     numero: "✦",
   },
@@ -53,7 +49,6 @@ const EPISODIOS_YT = [
     id: "12",
     titulo: "Epi 12: Trauma",
     descripcion: "No estás sola con tu dolor. Un episodio pensado y sentido para transmitir que el trauma tiene camino de sanación.",
-    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
     duracion: "22 min",
     numero: "12",
   },
@@ -61,7 +56,6 @@ const EPISODIOS_YT = [
     id: "11",
     titulo: "Epi 11: Autoconocimiento y Desarrollo Personal",
     descripcion: "Con Leandra Saillen, coach ontológica, exploramos el autoconocimiento y el desarrollo personal en profundidad.",
-    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
     duracion: "41 min",
     numero: "11",
   },
@@ -69,7 +63,6 @@ const EPISODIOS_YT = [
     id: "10",
     titulo: "Epi 10: Ansiedad y pensamientos",
     descripcion: "¡10 episodios! La relación entre los pensamientos y la ansiedad desde una mirada integradora.",
-    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
     duracion: "29 min",
     numero: "10",
   },
@@ -77,7 +70,6 @@ const EPISODIOS_YT = [
     id: "9",
     titulo: "Epi 09: Ansiedad y el cuerpo",
     descripcion: "La ansiedad desde una mirada integradora: cuerpo, mente y emociones. Cómo se manifiesta y cómo acompañarla.",
-    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
     duracion: "23 min",
     numero: "09",
   },
@@ -85,7 +77,6 @@ const EPISODIOS_YT = [
     id: "8",
     titulo: "Epi 08: Gratitud y Abundancia",
     descripcion: "Con Virginia Ricordi: la gratitud y la abundancia como prácticas cotidianas que transforman cómo habitamos nuestra vida.",
-    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
     duracion: "28 min",
     numero: "08",
   },
@@ -93,7 +84,6 @@ const EPISODIOS_YT = [
     id: "7",
     titulo: "Epi 07: Valores",
     descripcion: "Los valores como direcciones que nos sostienen incluso en la dificultad y nos orientan hacia una vida con sentido.",
-    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
     duracion: "18 min",
     numero: "07",
   },
@@ -101,7 +91,6 @@ const EPISODIOS_YT = [
     id: "6",
     titulo: "Epi 06: Momento Presente",
     descripcion: "Una pausa profunda para reconectar con el único lugar donde sucede la vida: el momento presente.",
-    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
     duracion: "31 min",
     numero: "06",
   },
@@ -109,7 +98,6 @@ const EPISODIOS_YT = [
     id: "5",
     titulo: "Epi 05: Aceptación",
     descripcion: "La aceptación no es resignarse, sino el acto valiente de soltar la lucha contra lo que ya es.",
-    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
     duracion: "16 min",
     numero: "05",
   },
@@ -117,7 +105,6 @@ const EPISODIOS_YT = [
     id: "4",
     titulo: "Epi 04: Compasión",
     descripcion: "El verdadero cambio empieza cuando decidís tratarte con amabilidad. Sobre autocompasión como fortaleza.",
-    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
     duracion: "12 min",
     numero: "04",
   },
@@ -125,7 +112,6 @@ const EPISODIOS_YT = [
     id: "3",
     titulo: "Epi 03: Resiliencia",
     descripcion: "La capacidad de florecer incluso en medio de la tormenta. Tres pilares clave para transformar el dolor en aprendizaje.",
-    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
     duracion: "12 min",
     numero: "03",
   },
@@ -133,7 +119,6 @@ const EPISODIOS_YT = [
     id: "2",
     titulo: "Epi 02: Valentía",
     descripcion: "Ser valiente no es no tener miedo, sino elegir avanzar con él. Pequeños actos de valentía que cambian todo.",
-    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
     duracion: "11 min",
     numero: "02",
   },
@@ -141,14 +126,10 @@ const EPISODIOS_YT = [
     id: "1",
     titulo: "Epi 01: Bienvenida y presentación",
     descripcion: "El episodio donde todo empezó. Iara cuenta quién es, su historia y la razón detrás de Encontrarme.",
-    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
     duracion: "7 min",
     numero: "01",
   },
 ];
-
-// Reemplazar con el embed ID real de Spotify
-const SPOTIFY_SHOW_ID = "4yEYbKGrKXm7vmHMYhWVNG";
 
 export default function PodcastSection() {
   return (
@@ -157,7 +138,6 @@ export default function PodcastSection() {
       className="py-20 md:py-28 bg-gradient-crema relative overflow-hidden"
       aria-labelledby="podcast-heading"
     >
-      {/* Forma orgánica decorativa */}
       <div
         className="absolute bottom-0 right-0 w-96 h-96
                    bg-lavanda-200/40 rounded-[60%_40%_55%_45%_/_45%_55%_45%_55%]
@@ -194,7 +174,6 @@ export default function PodcastSection() {
               <p className="text-crema-200/70 text-xs uppercase tracking-wider font-semibold mb-3 px-1">
                 Escuchá en Spotify
               </p>
-              {/* Spotify Embed — reemplazar SHOW_ID con el real */}
               <iframe
                 title="Podcast Encontrarme en Spotify"
                 src={`https://open.spotify.com/embed/show/${SPOTIFY_SHOW_ID}?utm_source=generator&theme=0`}
@@ -208,7 +187,6 @@ export default function PodcastSection() {
               />
             </div>
 
-            {/* Link directo a Spotify */}
             <a
               href={`https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`}
               target="_blank"
@@ -228,7 +206,7 @@ export default function PodcastSection() {
             </a>
           </div>
 
-          {/* Columna: Grid de episodios YouTube */}
+          {/* Columna: Lista de episodios */}
           <div className="lg:col-span-3 space-y-4">
             <div className="flex items-center justify-between mb-2">
               <p className="text-malva-700 font-semibold text-sm uppercase tracking-wider flex items-center gap-2">
@@ -236,41 +214,39 @@ export default function PodcastSection() {
                 Episodios
               </p>
               <a
-                href="https://www.youtube.com/@iaradanila"
+                href={`https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-malva-600 hover:text-malva-800 font-medium
                            flex items-center gap-1 transition-colors duration-200"
-                aria-label="Ver todos los episodios en YouTube"
+                aria-label="Ver todos los episodios en Spotify"
               >
                 Ver todos
                 <ExternalLink size={13} aria-hidden="true" />
               </a>
             </div>
 
-            <ul className="space-y-3" role="list" aria-label="Episodios del podcast">
-              {EPISODIOS_YT.map((ep) => (
+            <ul className="space-y-3" role="list" aria-label="Episodios del podcast Encontrarme">
+              {EPISODIOS.map((ep) => (
                 <li key={ep.id}>
                   <a
-                    href={ep.ytUrl}
+                    href={`https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-start gap-4 p-4 rounded-2xl
                                bg-crema-100 border border-crema-300/60
                                hover:border-lavanda-300 hover:shadow-malva-sm
                                transition-all duration-200 group"
-                    aria-label={`Episodio ${ep.numero}: ${ep.titulo} — ${ep.duracion}`}
+                    aria-label={`${ep.titulo} — ${ep.duracion}`}
                   >
-                    {/* Número de episodio */}
                     <span
                       className="text-malva-400/60 font-extrabold text-2xl
-                                 leading-none font-heading shrink-0 w-8"
+                                 leading-none shrink-0 w-8"
                       aria-hidden="true"
                     >
                       {ep.numero}
                     </span>
 
-                    {/* Info */}
                     <div className="flex-1 min-w-0">
                       <p className="text-malva-800 font-semibold text-sm leading-tight
                                    group-hover:text-malva-600 transition-colors">
@@ -281,12 +257,10 @@ export default function PodcastSection() {
                       </p>
                     </div>
 
-                    {/* Duración + icono */}
                     <div className="flex flex-col items-end gap-2 shrink-0">
                       <ExternalLink
                         size={14}
-                        className="text-malva-400/40 group-hover:text-malva-600
-                                   transition-colors"
+                        className="text-malva-400/40 group-hover:text-malva-600 transition-colors"
                         aria-hidden="true"
                       />
                       <span className="text-xs text-text-medium whitespace-nowrap">
@@ -299,6 +273,33 @@ export default function PodcastSection() {
             </ul>
           </div>
         </div>
+
+        {/* Banner YouTube */}
+        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4
+                        bg-crema-100 border border-crema-300/60 rounded-3xl px-8 py-5">
+          <div className="flex items-center gap-3">
+            <div className="w-9 h-9 rounded-full bg-red-100 flex items-center justify-center shrink-0">
+              <svg viewBox="0 0 24 24" className="w-5 h-5 fill-red-600" aria-hidden="true">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </div>
+            <p className="text-text-dark font-medium text-sm">
+              También podés escucharlos en{" "}
+              <strong className="text-malva-700">YouTube</strong>
+            </p>
+          </div>
+          <a
+            href="https://www.youtube.com/@iaradanila"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-accent text-sm px-6 py-2.5 whitespace-nowrap"
+            aria-label="Ver el canal de YouTube de Encontrarme"
+          >
+            Ver canal
+            <ExternalLink size={14} aria-hidden="true" />
+          </a>
+        </div>
+
       </div>
     </section>
   );
