@@ -1,54 +1,85 @@
 import { Youtube, Headphones, ExternalLink } from "lucide-react";
 
-// Episodios de ejemplo — reemplazar con los reales
 const EPISODIOS_YT = [
   {
     id: "1",
-    titulo: "¿Qué es la Terapia ACT?",
-    descripcion: "Una introducción honesta y sin tecnicismos a la Terapia de Aceptación y Compromiso.",
-    ytUrl: "https://youtube.com/@iaradanila",
-    duracion: "28 min",
-    numero: "01",
+    titulo: "Epi 16: Yo Soy — un viaje de regreso al Ser",
+    descripcion: "Un viaje sobre reconectarse con el ser esencial, más allá de las máscaras y los roles.",
+    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
+    duracion: "27 min",
+    numero: "16",
   },
   {
     id: "2",
-    titulo: "Trauma: más allá del diagnóstico",
-    descripcion: "Por qué el trauma no define quién sos y cómo trabajarlo desde la compasión.",
-    ytUrl: "https://youtube.com/@iaradanila",
-    duracion: "34 min",
-    numero: "02",
+    titulo: "Epi 15: Volver a Mí — la reconexión",
+    descripcion: "Explorar el malestar como señal para atender las necesidades internas propias.",
+    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
+    duracion: "21 min",
+    numero: "15",
   },
   {
     id: "3",
-    titulo: "Fusión cognitiva: cuando los pensamientos te atrapan",
-    descripcion: "Cómo identificar cuando te enredás con tus pensamientos y qué hacer al respecto.",
-    ytUrl: "https://youtube.com/@iaradanila",
-    duracion: "31 min",
-    numero: "03",
+    titulo: "Epi 14: Volver a Mí — cuando nos perdemos",
+    descripcion: "Sobre desconectarse de uno mismo y el camino de regreso a la presencia auténtica.",
+    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
+    duracion: "15 min",
+    numero: "14",
   },
   {
     id: "4",
-    titulo: "Valores vs. objetivos: la diferencia que cambia todo",
-    descripcion: "Entendé la diferencia y cómo usar tus valores como brújula en la vida.",
-    ytUrl: "https://youtube.com/@iaradanila",
-    duracion: "26 min",
-    numero: "04",
+    titulo: "Epi 13: Autoestima",
+    descripcion: "Los componentes de la autoestima y cómo mejorar la relación con uno mismo.",
+    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
+    duracion: "19 min",
+    numero: "13",
   },
   {
     id: "5",
-    titulo: "El cuerpo como mapa del trauma",
-    descripcion: "La conexión entre el cuerpo y las experiencias traumáticas desde la neurociencia.",
-    ytUrl: "https://youtube.com/@iaradanila",
-    duracion: "38 min",
-    numero: "05",
+    titulo: "Epi 12: Trauma",
+    descripcion: "El trauma como oportunidad de reconexión con el propio ser.",
+    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
+    duracion: "22 min",
+    numero: "12",
   },
   {
     id: "6",
-    titulo: "Aceptación no es resignación",
-    descripcion: "El concepto más malinterpretado de ACT, explicado con ejemplos reales.",
-    ytUrl: "https://youtube.com/@iaradanila",
-    duracion: "30 min",
-    numero: "06",
+    titulo: "Epi 11: Autoconocimiento y Desarrollo Personal",
+    descripcion: "Conversación con la coach Leandra Saillen sobre autoconocimiento y crecimiento personal.",
+    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
+    duracion: "41 min",
+    numero: "11",
+  },
+  {
+    id: "7",
+    titulo: "Epi 10: Ansiedad y pensamientos",
+    descripcion: "Una mirada integradora sobre la ansiedad y los pensamientos desde ACT y la neurociencia.",
+    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
+    duracion: "29 min",
+    numero: "10",
+  },
+  {
+    id: "8",
+    titulo: "Epi 09: Ansiedad y el cuerpo",
+    descripcion: "Cómo la ansiedad se manifiesta en el sistema nervioso y la conciencia corporal.",
+    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
+    duracion: "23 min",
+    numero: "09",
+  },
+  {
+    id: "9",
+    titulo: "Epi 08: Gratitud y Abundancia",
+    descripcion: "Con Virginia Ricordi sobre la gratitud como práctica cotidiana y transformadora.",
+    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
+    duracion: "28 min",
+    numero: "08",
+  },
+  {
+    id: "10",
+    titulo: "Epi 07: Valores",
+    descripcion: "Los valores como dirección que nos sostiene en la dificultad y nos orienta hacia una vida alineada.",
+    ytUrl: `https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`,
+    duracion: "18 min",
+    numero: "07",
   },
 ];
 
@@ -136,16 +167,16 @@ export default function PodcastSection() {
           <div className="lg:col-span-3 space-y-4">
             <div className="flex items-center justify-between mb-2">
               <p className="text-malva-700 font-semibold text-sm uppercase tracking-wider flex items-center gap-2">
-                <Youtube size={16} className="text-red-500" aria-hidden="true" />
-                Episodios en YouTube
+                <Headphones size={16} className="text-malva-600" aria-hidden="true" />
+                Episodios
               </p>
               <a
-                href="https://youtube.com/@iaradanila"
+                href={`https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-malva-600 hover:text-malva-800 font-medium
                            flex items-center gap-1 transition-colors duration-200"
-                aria-label="Ver todos los episodios en YouTube"
+                aria-label="Ver todos los episodios en Spotify"
               >
                 Ver todos
                 <ExternalLink size={13} aria-hidden="true" />
