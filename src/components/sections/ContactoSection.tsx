@@ -84,7 +84,7 @@ export default function ContactoSection() {
                   Escribime por WhatsApp
                 </p>
                 <p className="text-crema-300/60 text-sm mt-0.5">
-                  Respondo en el horario de atención Mo-Vi 9–19hs
+                  Respondo de lunes a viernes de 9 a 18hs
                 </p>
               </div>
             </a>
@@ -98,10 +98,6 @@ export default function ContactoSection() {
               <p>
                 <strong className="text-crema-200/80">Honorarios:</strong>{" "}
                 Se informan en la primera consulta
-              </p>
-              <p>
-                <strong className="text-crema-200/80">Primera sesión:</strong>{" "}
-                Entrevista de evaluación sin compromiso
               </p>
             </div>
           </div>
