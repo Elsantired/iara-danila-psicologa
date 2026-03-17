@@ -171,12 +171,12 @@ export default function PodcastSection() {
                 Episodios
               </p>
               <a
-                href={`https://open.spotify.com/show/${SPOTIFY_SHOW_ID}`}
+                href="https://www.youtube.com/@iaradanila"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-malva-600 hover:text-malva-800 font-medium
                            flex items-center gap-1 transition-colors duration-200"
-                aria-label="Ver todos los episodios en Spotify"
+                aria-label="Ver todos los episodios en YouTube"
               >
                 Ver todos
                 <ExternalLink size={13} aria-hidden="true" />
