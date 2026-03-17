@@ -1,4 +1,4 @@
-import { Youtube, Headphones, ExternalLink } from "lucide-react";
+import { Headphones, ExternalLink } from "lucide-react";
 
 const EPISODIOS_YT = [
   {
