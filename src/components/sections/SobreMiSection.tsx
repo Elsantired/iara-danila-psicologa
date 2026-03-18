@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { GraduationCap, Heart, BookOpen, Users } from "lucide-react";
 
 const FORMACION = [
@@ -19,7 +20,7 @@ const FORMACION = [
   {
     icon: Users,
     title: "Clínica Psicológica",
-    detail: "+5 años de práctica clínica individual y grupal",
+    detail: "+15 años de práctica clínica individual y grupal",
   },
 ];
 
@@ -43,18 +44,18 @@ export default function SobreMiSection() {
                 aria-hidden="true"
               />
 
-              {/* Placeholder foto */}
+              {/* Foto real */}
               <div
                 className="relative w-64 h-80 md:w-80 md:h-96
-                           rounded-3xl bg-gradient-to-br from-malva-700 to-malva-500
-                           overflow-hidden shadow-malva-lg
-                           flex items-center justify-center"
-                role="img"
-                aria-label="Foto de Iara Danila"
+                           rounded-3xl overflow-hidden shadow-malva-lg"
               >
-                <span className="text-crema-200/50 text-sm text-center px-6">
-                  [Foto de Iara]
-                </span>
+                <Image
+                  src="/iara-sobre-mi.jpg"
+                  alt="Iara Danila, psicóloga en Córdoba Capital especialista en Terapia ACT"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 768px) 256px, 320px"
+                />
               </div>
 
               {/* Badge de especialidad */}
@@ -66,7 +67,7 @@ export default function SobreMiSection() {
                 <p className="text-xs font-semibold tracking-wide">
                   Especialista en
                 </p>
-                <p className="text-sm font-bold">Trauma · ACT</p>
+                <p className="text-sm font-bold">ACT · EMDR</p>
               </div>
             </div>
           </div>

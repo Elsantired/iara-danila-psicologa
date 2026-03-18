@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Star } from "lucide-react";
 
 export default function HeroSection() {
@@ -67,7 +68,7 @@ export default function HeroSection() {
             <p className="text-crema-200/80 text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0">
               Soy Iara Danila, psicóloga especializada en{" "}
               <strong className="text-crema-100 font-semibold">
-                Trauma y Terapia ACT
+                Terapias de Aceptación y Compromiso (ACT)
               </strong>
               . Acompañarte a conectar con lo que realmente importa y construir una
               vida con sentido, desde un lugar cálido y sin juicio.
@@ -81,7 +82,7 @@ export default function HeroSection() {
               {[
                 "Turnos online para toda Argentina",
                 "Presencial en Córdoba Capital",
-                "Especialista en Trauma y ACT",
+                "Especialista en Terapia ACT",
               ].map((item) => (
                 <li
                   key={item}
@@ -129,31 +130,28 @@ export default function HeroSection() {
                 aria-hidden="true"
               />
 
-              {/* Placeholder foto — reemplazar con <Image> real */}
+              {/* Foto real de Iara */}
               <div
                 className="relative w-72 h-72 md:w-96 md:h-96
                            rounded-[60%_40%_55%_45%_/_45%_55%_45%_55%]
-                           bg-gradient-to-br from-malva-600/60 to-lavanda-400/40
-                           border-2 border-crema-100/20
-                           flex items-center justify-center
+                           overflow-hidden border-2 border-crema-100/20
                            shadow-glow"
-                role="img"
-                aria-label="Foto de perfil de Iara Danila, psicóloga"
               >
-                <span className="text-crema-200/50 text-sm text-center px-8">
-                  [Foto de Iara]
-                  <br />
-                  <span className="text-xs mt-1 block">
-                    Reemplazar con &lt;Image&gt;
-                  </span>
-                </span>
+                <Image
+                  src="/iara-hero.jpg"
+                  alt="Iara Danila, psicóloga especialista en Terapias de Aceptación y Compromiso en Córdoba"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                  sizes="(max-width: 768px) 288px, 384px"
+                />
               </div>
 
               {/* Tarjeta flotante — social proof */}
               <div
                 className="absolute -bottom-4 -left-4 md:-left-8
                            card-dark py-3 px-4 flex items-center gap-3"
-                aria-label="Más de 5 años de experiencia"
+                aria-label="Más de 15 años de experiencia"
               >
                 <div
                   className="w-10 h-10 rounded-full bg-lavanda-400/20
@@ -164,7 +162,7 @@ export default function HeroSection() {
                 </div>
                 <div>
                   <p className="text-crema-100 font-bold text-sm leading-none">
-                    +5 años
+                    +15 años
                   </p>
                   <p className="text-crema-300/60 text-xs mt-0.5">
                     acompañando procesos

@@ -8,16 +8,18 @@ export const metadata: Metadata = {
     template: "%s | Iara Danila Psicóloga",
   },
   description:
-    "Psicóloga especialista en Trauma y Terapia ACT en Córdoba Capital y Online para toda Argentina. Acompañamiento profesional, cercano y transformador. Pedí tu turno.",
+    "Psicóloga especialista en Terapias de Aceptación y Compromiso (ACT) en Córdoba Capital y Online para toda Argentina. +15 años acompañando procesos de cambio. Pedí tu turno.",
   keywords: [
     "psicóloga online Argentina",
     "terapia ACT Córdoba Capital",
-    "tratamiento trauma Córdoba",
+    "terapia aceptación y compromiso Córdoba",
     "psicóloga Iara Danila",
     "psicología online Córdoba",
-    "terapia aceptación y compromiso",
-    "trauma psicología",
-    "turnos psicólogo online",
+    "ACT psicología Córdoba",
+    "EMDR Córdoba Capital",
+    "turnos psicóloga online Argentina",
+    "psicología presencial Córdoba",
+    "terapia online Argentina",
   ],
   authors: [{ name: "Iara Danila", url: "https://www.iaradanila.com.ar" }],
   creator: "Iara Danila",
@@ -28,20 +30,20 @@ export const metadata: Metadata = {
     siteName: "Iara Danila Psicóloga",
     title: "Iara Danila | Psicóloga Online y Presencial en Córdoba Capital",
     description:
-      "Especialista en Trauma y Terapia ACT. Atención online para toda Argentina y presencial en Córdoba Capital.",
+      "Especialista en Terapias de Aceptación y Compromiso (ACT). +15 años acompañando procesos. Atención online para toda Argentina y presencial en Córdoba Capital.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/iara-hero.jpg",
         width: 1200,
         height: 630,
-        alt: "Iara Danila – Psicóloga Especialista en Trauma y ACT",
+        alt: "Iara Danila – Psicóloga Especialista en Terapia ACT en Córdoba",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Iara Danila | Psicóloga Online y Presencial en Córdoba",
-    description: "Especialista en Trauma y Terapia ACT. Online para toda Argentina.",
+    description: "Especialista en Terapia ACT. +15 años de experiencia. Online para toda Argentina.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -76,7 +78,7 @@ export default function RootLayout({
               "@type": "MedicalBusiness",
               name: "Iara Danila – Psicóloga",
               description:
-                "Psicóloga especialista en Trauma y Terapia ACT en Córdoba Capital y online.",
+                "Psicóloga especialista en Terapias de Aceptación y Compromiso (ACT) en Córdoba Capital y online. +15 años de experiencia clínica.",
               url: "https://www.iaradanila.com.ar",
               telephone: "+54-351-519-7687",
               address: {
